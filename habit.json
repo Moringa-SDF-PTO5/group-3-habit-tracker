@@ -1,0 +1,231 @@
+{
+  "info": {
+    "name": "Habit Tracker API",
+    "_postman_id": "12345678-1234-1234-1234-123456789012",
+    "description": "API for managing habits and users in the Habit Tracker application.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "User Management",
+      "item": [
+        {
+          "name": "Create User",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"newuser\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Users",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/api/users",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "users"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Habit Management",
+      "item": [
+        {
+          "name": "Create Habit",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Exercise\",\n  \"description\": \"Daily morning exercise\",\n  \"user_id\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/habits",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "habits"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Habits",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/api/habits",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "habits"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Habit",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/api/habits/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "habits",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Update Habit",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Exercise Updated\",\n  \"description\": \"Daily morning exercise for 30 minutes\",\n  \"user_id\": 1\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/habits/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "habits",
+                "1"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Delete Habit",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "http://localhost:5000/api/habits/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "habits",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Habit Progress Management",
+      "item": [
+        {
+          "name": "Track Habit Progress",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"habit_id\": 1,\n  \"date\": \"2024-06-15\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:5000/api/progress",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "progress"
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Habit Progress",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/api/progress/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "5000",
+              "path": [
+                "api",
+                "progress",
+                "1"
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
