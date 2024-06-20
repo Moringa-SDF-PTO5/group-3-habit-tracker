@@ -1,0 +1,19 @@
+{
+  "name": "group-3-habit-tracker/frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "formik": "^2.4.6",
+    "react-router-dom": "^6.23.1",
+    "yup": "^1.4.0"
+  }
+ 
+}
+
+
