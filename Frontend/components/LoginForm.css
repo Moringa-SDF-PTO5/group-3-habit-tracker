@@ -1,0 +1,28 @@
+/* src/components/LoginForm.css */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .login-form input,
+  .login-form button {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #0056b3;
+  }
+  
