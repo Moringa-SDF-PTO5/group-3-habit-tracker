@@ -1,70 +1,107 @@
-# Getting Started with Create React App
+# Habit Tracker Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend application for the Habit Tracker project. The Habit Tracker helps users to track their daily habits, visualize their progress, and stay motivated. This document will guide you through the setup process for the frontend application.
+
+## Table of Contents
+
+- [Habit Tracker Frontend](#habit-tracker-frontend)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Project Structure](#project-structure)
+  - [Available Scripts](#available-scripts)
+  - [Configuration](#configuration)
+  - [Contributing](#contributing)
+  - [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your local machine:
+
+- [Node.js](https://nodejs.org/) (version 14.x or later recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (npm is bundled with Node.js)
+
+## Installation
+
+Follow these steps to set up the project on your local machine:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Moringa-SDF-PTO5/group-3-habit-tracker.git
+    cd group-3-habit-tracker
+    ```
+
+2. **Install dependencies:**
+
+    Using npm:
+
+    ```bash
+    npm install
+    ```
+
+    Or using yarn:
+
+    ```bash
+    yarn install
+    ```
+
+## Running the Application
+
+To start the development server, use the following command:
+
+Using npm:
+
+```bash
+npm start
+```
+
+Or using yarn:
+
+```bash
+yarn start
+```
+
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will reload when you make changes.
+
+
+
+- **public/**: Contains static assets like HTML and images.
+- **src/**: Contains the source code for the application.
+  - **components/**: Contains React components.
+  - **services/**: Contains service modules for API calls.
+  - **App.js**: The root component of the application.
+  - **index.js**: The entry point of the application.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start` or `yarn start`: Runs the app in development mode.
+- `npm build` or `yarn build`: Builds the app for production to the `build` folder.
+- `npm test` or `yarn test`: Launches the test runner in the interactive watch mode.
+- `npm eject`: Ejects the create-react-app configuration. **Note:** This is a one-way operation.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Contributing
 
-### `npm test`
+We welcome contributions! Please follow these steps to contribute:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Open a Pull Request.
 
-### `npm run build`
+## License
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is licensed under the MIT License.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Copyright 2024
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `npm run eject`
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE
