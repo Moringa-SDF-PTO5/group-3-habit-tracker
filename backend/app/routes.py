@@ -4,6 +4,10 @@ from .models import User, Habit, Progress, Reminder
 
 api = Blueprint('api', __name__)
 
+@api.route('/')
+def home():
+    return "Welcome to habit-tracker"
+
 @api.route('/users', methods=['POST'])
 def create_user():
     data = request.get_json()
@@ -68,3 +72,5 @@ def create_reminder():
     db.session.add(new_reminder)
     db.session.commit()
     return jsonify(new_reminder.to_dict()), 201
+
+
