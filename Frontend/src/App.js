@@ -1,6 +1,6 @@
 // src/App.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HabitDetails from './components/HabitDetails';
 import HabitForm from './components/HabitForm';
 import LoginForm from './components/LoginForm';
@@ -14,8 +14,34 @@ function App() {
   const [user, setUser] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const addHabit = (habit) => {
-    setHabits([...habits, habit]);
+  useEffect(() => {
+    const fetchHabits = async () => {
+      try {
+        const response = await fetch('/api/habits');
+        const data = await response.json();
+        setHabits(data);
+      } catch (error) {
+        console.error('Error fetching habits:', error);
+      }
+    };
+
+    fetchHabits();
+  }, []);
+
+  const addHabit = async (habit) => {
+    try {
+      const response = await fetch('/api/habits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(habit)
+      });
+      const newHabit = await response.json();
+      setHabits([...habits, newHabit]);
+    } catch (error) {
+      console.error('Error adding habit:', error);
+    }
   };
 
   const handleLogin = (username) => {
