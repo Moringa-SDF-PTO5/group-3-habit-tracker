@@ -6,7 +6,7 @@ api = Blueprint('api', __name__)
 
 @api.route('/')
 def home():
-    return "Welcome to habit-tracker"
+    return "Welcome to our Habit-tracker"
 
 @api.route('/users', methods=['POST'])
 def create_user():
