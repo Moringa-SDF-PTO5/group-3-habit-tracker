@@ -60,7 +60,7 @@ There are two ways to create a virtual environment in Linux. See below.
     ```
     psql -U habit_user -d habit_tracker
     ```
-
+See below some screen shots to aid you.
 ## Configuration
 
 1. **Configure the application:**
