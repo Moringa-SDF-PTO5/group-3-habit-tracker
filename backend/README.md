@@ -62,9 +62,9 @@ There are two ways to create a virtual environment in Linux. See below.
     ```
 See below some screen shots to aid you.
 
-![Creating database.](images/postgres.png)
+![Creating database.](backend/images/postgres.png)
 
-![Connecting to new database.](images/postgres2.png)
+![Connecting to new database.](backend/images/postgres2.png)
 
 
 ## Configuration
