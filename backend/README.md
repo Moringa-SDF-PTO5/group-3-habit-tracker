@@ -61,6 +61,12 @@ There are two ways to create a virtual environment in Linux. See below.
     psql -U habit_user -d habit_tracker
     ```
 See below some screen shots to aid you.
+
+![Creating database.](images/postgres.png)
+
+![Connecting to new database.](images/postgres2.png)
+
+
 ## Configuration
 
 1. **Configure the application:**
