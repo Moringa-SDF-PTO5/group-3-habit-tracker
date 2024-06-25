@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchHabits = async () => {
       try {
-        const response = await fetch('/api/habits');
+        const response = await fetch('/https://backend1-1-m0ph.onrender.com');
         const data = await response.json();
         setHabits(data);
       } catch (error) {
@@ -30,7 +30,7 @@ function App() {
 
   const addHabit = async (habit) => {
     try {
-      const response = await fetch('/api/habits', {
+      const response = await fetch('/https://backend1-1-m0ph.onrender.com', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
