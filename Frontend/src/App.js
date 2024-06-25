@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const fetchHabits = async () => {
       try {
-        const response = await fetch('/https://backend1-1-m0ph.onrender.com');
+        const response = await fetch('/api/habits');
         const data = await response.json();
         setHabits(data);
       } catch (error) {
@@ -28,9 +28,26 @@ function App() {
     fetchHabits();
   }, []);
 
+  useEffect(() => {
+    const checkReminders = () => {
+      const now = new Date();
+      habits.forEach(habit => {
+        if (habit.reminderTime) {
+          const [hours, minutes] = habit.reminderTime.split(':').map(Number);
+          if (now.getHours() === hours && now.getMinutes() === minutes) {
+            alert(`Reminder: It's time to work on your habit "${habit.name}"`);
+          }
+        }
+      });
+    };
+
+    const reminderInterval = setInterval(checkReminders, 60000); // Check every minute
+    return () => clearInterval(reminderInterval);
+  }, [habits]);
+
   const addHabit = async (habit) => {
     try {
-      const response = await fetch('/https://backend1-1-m0ph.onrender.com', {
+      const response = await fetch('/api/habits', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
