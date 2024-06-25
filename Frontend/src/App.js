@@ -1,5 +1,3 @@
-// src/App.js
-
 import React, { useState, useEffect } from 'react';
 import HabitDetails from './components/HabitDetails';
 import HabitForm from './components/HabitForm';
@@ -17,7 +15,7 @@ function App() {
   useEffect(() => {
     const fetchHabits = async () => {
       try {
-        const response = await fetch('/https://backend1-1-m0ph.onrender.com');
+        const response = await fetch('https://backend1-1-m0ph.onrender.com'); // Corrected URL
         const data = await response.json();
         setHabits(data);
       } catch (error) {
@@ -30,7 +28,7 @@ function App() {
 
   const addHabit = async (habit) => {
     try {
-      const response = await fetch('/https://backend1-1-m0ph.onrender.com', {
+      const response = await fetch('https://backend1-1-m0ph.onrender.com', { // Corrected URL
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
