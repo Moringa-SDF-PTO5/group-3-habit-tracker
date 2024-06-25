@@ -44,6 +44,7 @@ const HabitDetails = ({ habitId }) => {
       <h3>{habit.name}</h3>
       <p>{habit.description}</p>
       <p>Start Date: {habit.startDate}</p>
+      {habit.reminderTime && <p>Reminder: {habit.reminderTime}</p>}
     </div>
   );
 };
