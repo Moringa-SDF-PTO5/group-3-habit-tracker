@@ -8,12 +8,34 @@ const HabitForm = ({ addHabit }) => {
   const [description, setDescription] = useState('');
   const [startDate, setStartDate] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    addHabit({ name, description, startDate });
-    setName('');
-    setDescription('');
-    setStartDate('');
+
+    const habit = { name, description, startDate };
+
+    try {
+      const response = await fetch('https://backend1-1-m0ph.onrender.com/habits', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(habit),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+
+      const data = await response.json();
+      addHabit(data);
+
+      // Clear the form
+      setName('');
+      setDescription('');
+      setStartDate('');
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
