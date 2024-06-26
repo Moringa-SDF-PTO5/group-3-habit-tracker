@@ -73,6 +73,10 @@ This will run the app in development mode. Open https://group-3-habit-tracker-1-
   - **services/**: Contains service modules for API calls.
   - **App.js**: The root component of the application.
   - **index.js**: The entry point of the application.
+  - 
+## Backend
+
+The folowing is a link to the backend repository: https://github.com/Moringa-SDF-PTO5/backend1
 
 ## Available Scripts
 
