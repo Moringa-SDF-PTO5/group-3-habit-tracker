@@ -11,7 +11,7 @@ const HabitDetails = ({ habitId }) => {
   // Function to fetch habit details from the local file
   const fetchHabitDetails = async () => {
     try {
-      const response = await fetch('/https://backend1-1-m0ph.onrender.com');
+      const response = await fetch('https://backend1-1-m0ph.onrender.com/habits');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
