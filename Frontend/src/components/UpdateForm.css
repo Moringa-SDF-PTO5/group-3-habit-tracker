@@ -1,0 +1,87 @@
+/* src/components/UpdateForm.css */
+
+.update-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .update-form-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .update-form {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .update-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .update-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .update-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .update-form input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .update-submit-button,
+  .update-cancel-button {
+    padding: 10px 15px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .update-submit-button {
+    background-color: #4caf50;
+    margin-right: 10px;
+  }
+  
+  .update-submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .update-cancel-button {
+    background-color: #f44336;
+  }
+  
+  .update-cancel-button:hover {
+    background-color: #e53935;
+  }
+  
