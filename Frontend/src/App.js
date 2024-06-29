@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import HabitDetails from './components/HabitDetails';
 import HabitForm from './components/HabitForm';
 import LoginForm from './components/LoginForm';
-import Calendar from './components/Calendar';
+// import Calendar from './components/Calendar';
 import Search from './components/Search';
 import './App.css';
 
@@ -73,6 +73,7 @@ function App() {
 
   return (
     <Router>
+      
       <div className="App">
         <header className="App-header">
           <h1>Habit Tracker</h1>
@@ -92,7 +93,7 @@ function App() {
                     
                     ))}
                   </div>
-                  <Calendar habits={habits} />
+                  {/* <Calendar habits={habits} /> */}
                 </>
               )
             } />

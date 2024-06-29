@@ -3,7 +3,7 @@
 .habit-form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -14,10 +14,12 @@
 }
 
 .habit-form input {
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 16px;
+  background-color: #fff;
+  color: #333;
 }
 
 .habit-form input:focus {
@@ -27,13 +29,18 @@
 }
 
 .habit-form button {
-  padding: 10px;
+  padding: 12px;
   background-color: #4caf50;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.habit-form button:hover {
+  background-color: #45a049;
 }
 
 .habit-form button:disabled {
@@ -43,5 +50,10 @@
 
 .habit-form .error-message {
   color: #f44336;
+  font-size: 12px;
+}
+
+.habit-form .success-message {
+  color: #4caf50;
   font-size: 12px;
 }
