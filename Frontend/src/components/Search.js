@@ -21,7 +21,7 @@ const Search = () => {
 
   const updateHabit = (id, updatedFields) => {
     fetch(`https://backend1-1-m0ph.onrender.com/habits/${id}`, {
-      method: 'PATCH',
+      method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
       },

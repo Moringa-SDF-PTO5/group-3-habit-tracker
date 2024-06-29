@@ -7,6 +7,7 @@ import HabitForm from './components/HabitForm';
 import LoginForm from './components/LoginForm';
 // import Calendar from './components/Calendar';
 import Search from './components/Search';
+import Reminder from './components/Reminder';
 import './App.css';
 
 function App() {
@@ -15,19 +16,19 @@ function App() {
   const [user, setUser] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
 
-  useEffect(() => {
-    const fetchHabits = async () => {
-      try {
-        const response = await fetch('/api/habits');
-        const data = await response.json();
-        setHabits(data);
-      } catch (error) {
-        console.error('Error fetching habits:', error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchHabits = async () => {
+  //     try {
+  //       const response = await fetch('/api/habits');
+  //       const data = await response.json();
+  //       setHabits(data);
+  //     } catch (error) {
+  //       console.error('Error fetching habits:', error);
+  //     }
+  //   };
 
-    fetchHabits();
-  }, []);
+  //   fetchHabits();
+  // }, []);
 
   useEffect(() => {
     const checkReminders = () => {
@@ -93,7 +94,7 @@ function App() {
                     
                     ))}
                   </div>
-                  {/* <Calendar habits={habits} /> */}
+                   <Reminder /> 
                 </>
               )
             } />

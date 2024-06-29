@@ -9,6 +9,7 @@ const HabitDetails = ({ habit }) => {
       <h3>{habit.name}</h3>
       <p>{habit.description}</p>
       <p>Start Date: {habit.date}</p>
+      {habit.reminderDate && <p>Reminder: {Date(habit.reminderDate)}</p>}
     </div>
   );
 };

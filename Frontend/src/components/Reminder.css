@@ -1,0 +1,63 @@
+/* src/components/Reminder.css */
+
+.reminder-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .reminder-form h2 {
+    margin-top: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+  }
+  
+  .reminder-submit-button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .reminder-submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
