@@ -54,7 +54,7 @@ const Search = () => {
             <div className="habit-info">
               <h3 className="habit-name">Habit name: {habit.name}</h3>
               <p className="habit-description">Description: {habit.description}</p>
-              <p className="habit-date">Date: {new Date(habit.date).toLocaleDateString()}</p>
+              <p className="habit-date">Date: {Date(habit.date)}</p>
             </div>
             <div className="habit-actions">
               <button 
