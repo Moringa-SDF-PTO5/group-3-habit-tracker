@@ -88,16 +88,15 @@ In the project directory, you can run:
 - `npm eject`: Ejects the create-react-app configuration. **Note:** This is a one-way operation.
 
 
-## Contributing
+## Contributors
 
-We welcome contributions! Please follow these steps to contribute:
+The following people contributed to the project
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Open a Pull Request.
-
+1. Mary Njoroge
+2. Alex Njoroge
+3. Stacy Njehia
+4. Irene Ndinda
+   
 ## License
 
 This project is licensed under the MIT License.
