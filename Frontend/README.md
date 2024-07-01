@@ -207,7 +207,7 @@ To run the application locally, execute:
 flask run or pipenv run python run.py
 
 
-The application will be available at http://127.0.0.1:5000. 
+The application will be available at http://127.0.0.1:5000. (Locally) and deployed on Render https://backend1-1-m0ph.onrender.com/
 
 
 
