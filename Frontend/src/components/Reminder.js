@@ -15,6 +15,7 @@ const Reminder = ({ habitId, addReminder }) => {
   };
 
   return (
+    <div className="reminderform-container">
     <form className="reminder-form" onSubmit={handleSubmit}>
       <h2>Set a Reminder</h2>
       <div className="form-group">
@@ -39,6 +40,7 @@ const Reminder = ({ habitId, addReminder }) => {
       </div>
       <button type="submit" className="reminder-submit-button">Set Reminder</button>
     </form>
+    </div>
   );
 };
 
