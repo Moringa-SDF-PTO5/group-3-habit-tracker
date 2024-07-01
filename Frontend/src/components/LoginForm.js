@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './LoginForm.css';
+import { Link } from 'react-router-dom';
 
 const LoginForm = ({ onLogin }) => {
   return (
@@ -33,6 +34,7 @@ const LoginForm = ({ onLogin }) => {
           <button type="submit" disabled={isSubmitting}>
             Login
           </button>
+          <Link to = 'register' >No account ? Register Here</Link>
         </Form>
       )}
     </Formik>

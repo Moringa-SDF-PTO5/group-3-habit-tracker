@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import HabitDetails from './components/HabitDetails';
 import HabitForm from './components/HabitForm';
 import LoginForm from './components/LoginForm';
+import RegisterForm from './components/RegistrationForm';
+
 // import Calendar from './components/Calendar';
 import Search from './components/Search';
 import Reminder from './components/Reminder';
@@ -81,6 +83,7 @@ function App() {
         </header>
         <main>
           <Routes>
+            <Route path="/register" element={<RegisterForm />}/>
             <Route path="/" element={isLoggedIn ? <Navigate to="/dashboard" /> : <LoginForm onLogin={handleLogin} />} />
             <Route path="/dashboard" element={
               !isLoggedIn ? <Navigate to="/" /> : (
