@@ -94,12 +94,12 @@ The following people contributed to the project
 2. Alex Njoroge
 
 
-## Backend
+## Habit Tracker Backend
 
-The folowing is a link to the backend repository: https://github.com/Moringa-SDF-PTO5/backend1
+The folowing is a link to our backend repository: https://github.com/Moringa-SDF-PTO5/backend1
 
-# group-3-habit-tracker backend
-This is the backend for the Habit Tracker application, built using Flask and PostgreSQL. It provides a RESTful API for managing users, habits, progress, and reminders.
+
+This is the README.md  for the Habit Tracker application, built using Flask and PostgreSQL. It provides a RESTful API for managing users, habits, progress, and reminders.
 
 ## Table of Contents
 
