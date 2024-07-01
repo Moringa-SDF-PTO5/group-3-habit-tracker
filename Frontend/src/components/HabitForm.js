@@ -4,6 +4,7 @@ import './HabitForm.css';
 
 const HabitForm = ({ addHabit }) => {
   return (
+    <div className="habitform-container">
     <Formik
       initialValues={{ name: '', description: '', startDate: '' }}
       validate={(values) => {
@@ -73,6 +74,7 @@ const HabitForm = ({ addHabit }) => {
         </Form>
       )}
     </Formik>
+      </div>
   );
 };
 
