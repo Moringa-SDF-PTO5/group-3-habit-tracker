@@ -119,14 +119,14 @@ This is the backend for the Habit Tracker application, built using Flask and Pos
 
 ### Steps
 
-1. *Clone the repository:*
+1. Clone the repository:
 
     
     git clone https://github.com/yourusername/group-3-habit-tracker.git
     cd group-3-habit-tracker/backend
     
 
-2. *Create and activate a virtual environment:*
+2. Create and activate a virtual environment:
 There are two ways to create a virtual environment in Linux. See below.
     
     1. python -m venv venv 
@@ -135,13 +135,13 @@ There are two ways to create a virtual environment in Linux. See below.
     source venv/bin/activate  # On Windows use `venv\Scripts\activate`
     
 
-3. *Install the required packages:*
+3. Install the required packages:
 
     
     pip install -r requirements.txt
     
 
-4. *Install PostgreSQL and create a database:*
+4. Install PostgreSQL and create a database:
 
     Follow the instructions on the [PostgreSQL website](https://www.postgresql.org/download/) to install PostgreSQL on your machine. Then create a database, in our scenario we did the following:
 
@@ -165,31 +165,37 @@ There are two ways to create a virtual environment in Linux. See below.
     
 See below some screen shots to aid you.
 
-![Creating database.](backend/postgres.png)
+![Creating database.](/images/postgres.png)
 
-![Connecting to new database.](backend/images/postgres2.png)
+![Connecting to new database.](/images/postgres2.png)
 
 
 ## Configuration
 
-1. *Configure the application:*
+1. Configure the application:
+
 
     Create a .env file in the backend directory with the following content:
 
-    env
-    FLASK_APP=app
+    env FLASK_APP=run.py
+
     FLASK_ENV=development
+
     DATABASE_URL=postgresql://habit_user:habit@localhost/habit_tracker
+
     SECRET_KEY=your_secret_key
+
     
 
     Replace username, password, and your_secret_key with your PostgreSQL username, password, and a secret key of your choice. In our case it is as written above
 
-2. *Initialize the database:*
+2. Initialize the database:
 
     
     flask db init
+
     flask db migrate -m "Initial migration"
+
     flask db upgrade
     
 
