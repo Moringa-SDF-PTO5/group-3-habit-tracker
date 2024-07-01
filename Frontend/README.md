@@ -74,9 +74,6 @@ This will run the app in development mode. Open https://group-3-habit-tracker-1-
   - *App.js*: The root component of the application.
   - *index.js*: The entry point of the application.
   - 
-## Backend
-
-The folowing is a link to the backend repository: https://github.com/Moringa-SDF-PTO5/backend1
 
 ## Available Scripts
 
@@ -93,7 +90,13 @@ In the project directory, you can run:
 The following people contributed to the project
 
 1. Mary Njoroge
+
 2. Alex Njoroge
+
+
+## Backend
+
+The folowing is a link to the backend repository: https://github.com/Moringa-SDF-PTO5/backend1
 
 # group-3-habit-tracker backend
 This is the backend for the Habit Tracker application, built using Flask and PostgreSQL. It provides a RESTful API for managing users, habits, progress, and reminders.
@@ -143,13 +146,16 @@ There are two ways to create a virtual environment in Linux. See below.
     Follow the instructions on the [PostgreSQL website](https://www.postgresql.org/download/) to install PostgreSQL on your machine. Then create a database, in our scenario we did the following:
 
     
-    # Connect to PostgreSQL as a superuser
+    ### Connect to PostgreSQL as a superuser
     sudo -u postgres psql
-    # Create the role habit_user with the password of your choice
+
+    ### Create the role habit_user with the password of your choice
     CREATE ROLE habit_user WITH LOGIN PASSWORD 'habit';
-    # Create the database habit_tracker with habit_user as the owner
+
+    ### Create the database habit_tracker with habit_user as the owner
     CREATE DATABASE habit_tracker OWNER habit_user;
-    # Grant all privileges on the database to habit_user
+
+    ### Grant all privileges on the database to habit_user
     GRANT ALL PRIVILEGES ON DATABASE habit_tracker TO habit_user;
     
     After setting up the database and role, you can connect to the new database using the following command:
@@ -159,7 +165,7 @@ There are two ways to create a virtual environment in Linux. See below.
     
 See below some screen shots to aid you.
 
-![Creating database.](backend/images/postgres.png)
+![Creating database.](backend/postgres.png)
 
 ![Connecting to new database.](backend/images/postgres2.png)
 
@@ -181,7 +187,7 @@ See below some screen shots to aid you.
 
 2. *Initialize the database:*
 
-    bash
+    
     flask db init
     flask db migrate -m "Initial migration"
     flask db upgrade
